@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(22, 22, 35);
+}
+
+.header {
+  padding: 24px 50px;
+  background-color: rgb(22, 22, 35);
+}
+
+.title {
+  font-family: "Train One";
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(180, 180, 180);
+}
+
+.graphics {
+  width: 500px;
+  height: 500px;
+}
