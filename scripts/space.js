@@ -1,4 +1,4 @@
-class Space {
+export default class Space {
   constructor(sun) {
     this.sun = sun;
     this.planets = [];
@@ -8,5 +8,3 @@ class Space {
     this.planets.push(planet);
   }
 }
-
-export default Space;

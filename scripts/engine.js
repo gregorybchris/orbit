@@ -1,13 +1,13 @@
-class Engine {
-  constructor(space) {
+export default class Engine {
+  constructor(space, audio) {
     this.space = space;
+    this.audio = audio;
+    audio.start();
   }
 
   update = (currentTime, deltaTime) => {
     this.space.planets.forEach((planet) => {
-      planet.move(deltaTime);
+      planet.move(currentTime);
     });
   };
 }
-
-export default Engine;

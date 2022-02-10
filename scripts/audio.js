@@ -1,9 +1,10 @@
-class Audio {
+export default class Audio {
   constructor() {
     this.context = new (window.AudioContext || window.webkitAudioContext)();
   }
 
-  go() {
+  start() {
+    console.log("Audio initialized");
     const frequencies = [200];
     frequencies.forEach((frequency) => {
       let oscillator = this.context.createOscillator();
@@ -11,9 +12,7 @@ class Audio {
       oscillator.type = "sine";
       oscillator.frequency.setValueAtTime(frequency, this.context.currentTime);
       oscillator.connect(this.context.destination);
-      //   oscillator.start();
+      // oscillator.start();
     });
   }
 }
-
-export default Audio;

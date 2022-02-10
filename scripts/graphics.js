@@ -1,4 +1,4 @@
-const [WIDTH, HEIGHT] = [500, 500];
+const [WIDTH, HEIGHT] = [1000, 600];
 
 const getUpdate = (onUpdate) => {
   let lastTime = 0;
@@ -43,7 +43,7 @@ const initGraphics = (space, onUpdate) => {
   planetCircles.append("title").text((planet) => `planet ${planet.id}`);
 
   space.planets.forEach((planet) => {
-    planet.subscribe(onPlanetMove);
+    planet.onMove(onPlanetMove);
   });
 
   // Sun

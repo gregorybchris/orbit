@@ -1,10 +1,10 @@
 body {
-  background-color: rgb(22, 22, 35);
+  background-color: rgb(20, 20, 32);
 }
 
 .header {
   padding: 24px 50px;
-  background-color: rgb(22, 22, 35);
+  background-color: rgb(20, 20, 32);
 }
 
 .title {
@@ -15,6 +15,6 @@ body {
 }
 
 .graphics {
-  width: 500px;
-  height: 500px;
+  width: 1000px;
+  height: 600px;
 }
