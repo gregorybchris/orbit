@@ -32,4 +32,6 @@ space.addPlanet(planet4);
 
 const audio = new Audio();
 const engine = new Engine(space, audio);
+
+engine.getAudioPermission();
 initGraphics(space, engine.update);

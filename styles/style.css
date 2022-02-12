@@ -18,3 +18,7 @@ body {
   width: 1000px;
   height: 600px;
 }
+
+.alert-container {
+  font-family: "Open Sans";
+}
